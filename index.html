@@ -1,16 +1,38 @@
-<html>
-    <head>
+<html lang="en">
+  <head>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
-    </body>
+    <link rel="stylesheet" href="style.css" />
+    <title>IBM Final Project</title>
+  </head>
+  <body>
+    <main>
+      <h1>Simple Interest Calculator</h1>
+      <p class="amt">
+        Amount<input type="number" id="principal" required /><br />
+      </p>
+      Interest rate
+      <input
+        type="range"
+        id="rangeInput"
+        name="rangeInput"
+        min="0"
+        max="100"
+        step="1"
+        value="0"
+        oninput="rate.value = rangeInput.value"
+        required
+      />
+      <cite
+        ><output id="rate" name="rate" for="rangeInput">0</output>%<br
+      /></cite>
+      Number of Years <input type="number" id="years" required /><br />
+      <button onclick="compute()" class="btn btn-primary">Compute</button
+      ><br /><br /><br />
+      <p>
+        <span id="word"></span><abbr id="result"></abbr><br />
+        <span id="message"></span><abbr id="current"></abbr><br />
+      </p>
+    </main>
+    <script src="js/bootstrap.js"></script>
+  </body>
 </html>
