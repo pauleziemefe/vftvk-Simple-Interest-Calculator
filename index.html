@@ -1,38 +1,39 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>IBM Final Project</title>
   </head>
   <body>
-    <main>
+    <div class="maindiv">
       <h1>Simple Interest Calculator</h1>
-      <p class="amt">
-        Amount<input type="number" id="principal" required /><br />
-      </p>
-      Interest rate
+
+      Amount <input type="number" id="principal" /> <br />
+      Rate
       <input
         type="range"
-        id="rangeInput"
-        name="rangeInput"
-        min="0"
-        max="100"
-        step="1"
-        value="0"
-        oninput="rate.value = rangeInput.value"
-        required
+        id="rate"
+        min="1"
+        max="20"
+        value="10.25"
+        onchange="updateRate()"
       />
-      <cite
-        ><output id="rate" name="rate" for="rangeInput">0</output>%<br
-      /></cite>
-      Number of Years <input type="number" id="years" required /><br />
-      <button onclick="compute()" class="btn btn-primary">Compute</button
-      ><br /><br /><br />
-      <p>
-        <span id="word"></span><abbr id="result"></abbr><br />
-        <span id="message"></span><abbr id="current"></abbr><br />
-      </p>
-    </main>
-    <script src="js/bootstrap.js"></script>
+      <span id="rate_val"> 10.25 </span>% <br />
+      No. of Years <input type="number" id="years" />
+      <select name="years" id="years">
+        <option value="1">1</option>
+        <option value="10">10</option></select
+      ><br />
+      Interest : <span id="result"></span><br />
+
+      <button onclick="compute()">Compute Interest</button>
+
+      </br> <span id="word"></span><b><span id="p"></span></b> 
+      </br> <span id="text"></span><b><span id="ratee"></span><span id="per"></span></b>
+      </br> <span id="message"></span><b><span id="resultt"></span></b> 
+      </br> <span id="textt"></span><b><span id="year"></span></b>
+      <footer>This calculator belongs to Paul Eziemefe</footer>
+    </div>
   </body>
 </html>

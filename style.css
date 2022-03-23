@@ -1,100 +1,19 @@
-/* A CSS to mobile */
 body {
-  font-family: arial, sans-serif;
-  background-color: #0c0c0c;
-  color: #222;
-  font-size: 20px;
-  border: solid #fff 2px;
-  border-radius: 35px;
-}
-main {
-  padding: 0 10px;
-}
-
-h1 {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
   display: flex;
   justify-content: center;
-  text-align: center;
-  padding: 2px;
-  font-size: 45px;
-  padding: 30px 40px;
-  color: #fff;
-}
-
-main {
-  text-align: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-}
-
-.amt {
-  margin: 40px 0;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
-
-cite {
-  margin-bottom: 60px;
+h1 {
+  color: grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-input {
-  height: 25px;
-  width: 400px;
-  font-size: inherit;
-  border: solid #000 1px;
-  border-radius: 35px;
-  margin: 0 7px;
-  padding: 18px;
-}
-
-#rangeInput {
-  height: 50px;
-  width: 500px;
-}
-#principal,
-#years {
-  margin: 20px 0 30px 10px;
-}
-
-#principal:focus,
-#years:focus {
-  box-shadow: #222 3px 5px 7px;
-}
-
-button {
-  background-color: #222;
-  color: #fff;
-  border: solid 2px #fff;
-  border-radius: 24px;
-  width: 200px;
-  height: 60px;
-  margin: 25px auto 15px auto;
-  font-size: inherit;
-  box-shadow: black 3px 2px 4px 2px;
-}
-
-button:hover,
-button:active {
-  cursor: pointer;
-  color: #0c0c0c;
-  box-shadow: #000 -5px -6px -13px -5px;
-  background-color: #222;
-}
-
-span,
-abbr {
-  padding: inherit;
-  font-size: 25px;
-  font-weight: 200% bold;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 75px;
-}
-
-#result,
-#current {
-  font-weight: bold;
+.maindiv {
+  background-color: white;
+  color: black;
+  width: 300px;
+  padding: 20px;
+  border-radius: 25px;
 }
